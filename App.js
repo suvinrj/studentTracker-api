@@ -25,6 +25,6 @@ app.post('/push-notification', (req, res)=>{
     });
 });
 
-var port = 8080;
+var port = process.env.PORT || 8080;
 
 app.listen(port, ()=> console.log(`Server is running on port ${port}`));
