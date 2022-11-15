@@ -6,7 +6,7 @@ app.use(express.json());
 app.post('/push-notification', (req, res)=>{
     module.exports.token = `${req.body.token}`;
     var notification = require('./src/Notification')
-
+    
     async function pushNotif(){
         require('./src/Notification')
         return notification;
